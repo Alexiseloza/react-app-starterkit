@@ -1,7 +1,8 @@
 import { Container } from "react-bootstrap";
 import { Form } from "@formio/react";
 import { atomOneLight, CopyBlock } from "react-code-blocks";
-import logo from "../Light-Background.png";
+import logo from "../LogoSfondoScuro.svg";
+import Builder from "./Builder";
 
 const Home = () => {
   const onSubmitHandler = (submission) => {
@@ -12,33 +13,10 @@ const Home = () => {
     <>
       <Container className="pt-5">
         <div className="bg-light rounded-3 p-5 mb-4">
-          <h2>
+          {/* <h2>
             JavaScript Powered Forms for
-            <a
-              href="https://reactjs.org"
-              style={{
-                marginBottom: "10px",
-                padding: "0 0.5rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              React{" "}
-              <svg
-                height="2.5rem"
-                viewBox="-10.5 -9.45 21 18.9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="react-logo"
-              >
-                <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
-                <g stroke="currentColor" strokeWidth="1" fill="none">
-                  <ellipse rx="10" ry="4.5"></ellipse>
-                  <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
-                  <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
-                </g>
-              </svg>
-            </a>
+            
+            
             by
             <a
               href="https://form.io"
@@ -94,7 +72,8 @@ const Home = () => {
               src={"https://examples.form.io/example"}
               onSubmit={onSubmitHandler}
             />
-          </div>
+          </div> */}
+          <Builder />
         </div>
       </Container>
     </>

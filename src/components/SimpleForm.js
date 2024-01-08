@@ -16,7 +16,7 @@ const SimpleForm = () => {
             text={`<Form src={'https://examples.form.io/example'} />`}
             theme={atomOneLight}
             language="jsx"
-            codeBlock={true}
+            codeBlock={false}
             showLineNumbers={false}
           />
           <div className="py-3">

@@ -8,9 +8,10 @@ const Builder = () => {
   const onFormChange = (schema) => {
     setSchema({ ...schema, components: [...schema.components] });
   };
+
   return (
     <>
-      <FormBuilder form={jsonSchema} onChange={onFormChange} />
+      <FormBuilder form={jsonSchema} onSubmit={onFormChange} />
       <Card title="Form JSON Schema" className="my-4">
         <Card.Body>
           <Card.Title className="text-center">As JSON Schema</Card.Title>
@@ -21,6 +22,7 @@ const Builder = () => {
         <Card.Body>
           <Card.Title className="text-center">As Rendered Form</Card.Title>
           <Form form={jsonSchema} />
+          {console.log(jsonSchema)}
         </Card.Body>
       </Card>
     </>

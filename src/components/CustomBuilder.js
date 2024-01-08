@@ -6,14 +6,6 @@ import { atomOneLight, CopyBlock } from "react-code-blocks";
 const CustomBuilder = () => {
   const [options] = useState({
     language: "en",
-    i18n: {
-      jp: {
-        Label: "ラベル",
-        "Label Position": "ラベルの位置",
-        Placeholder: "プレースホルダー",
-        Description: "説明文",
-      },
-    },
   });
   const handler = (lang) => {
     options.language = lang;
@@ -46,11 +38,11 @@ const CustomBuilder = () => {
 const [options,setOptions] = useState({
   language: 'en',
   i18n: {
-    jp: {
-      'Label': 'ラベル',
-      'Label Position': 'ラベルの位置',
-      'Placeholder': 'プレースホルダー',
-      'Description': '説明文'
+    eng: {
+      'Label': 'here',
+      'Label Position': 'position',
+      'Placeholder': 'write here',
+      'Description': 'custom form'
     }
   }
 })
@@ -61,7 +53,6 @@ const [options,setOptions] = useState({
           />
           <div className="py-3">
             <button onClick={handler("en")}>English</button>
-            <button onClick={handler("jp")}>Japanese</button>
             <FormBuilder form={{ components: [] }} options={options} />
           </div>
         </Col>
